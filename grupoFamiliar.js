@@ -15,6 +15,12 @@ function ShowsInputsCreated(){ //Muestra imputs de acuerdo al numero que escribi
     event.preventDefault();  //Esto lo pongo para que no pase lo que paso en clase-5
     document.querySelector("#titulo").innerText = "Promedio de edad de tus familiares"; // Cambio el titulo
 
+
+
+//ACA TENGO QUE HACER QUE DEJEN DE ESTAR OCULTOS LOS BOTONES DEL A FUNCION CREATEBUTTONMORE Y CREATEBUTTONNEXT2
+
+
+
     let $numberFamily = document.querySelector("#numberFamily").value; // Selecciono el valor que introdujo el usuario del numero de familiares
 
     if ($numberFamily != 0){ // Creo tantos imputs como $numberFamily tenga.
@@ -29,15 +35,31 @@ function CalcularPromedio(){
     let verArray= [] ;
     let $imputsGenerados = Array.from(document.getElementsByClassName("inputsGenerados"));
     
-     for (i=0;i<$imputsGenerados.length;i++)
+     for (let i=0;i<$imputsGenerados.length;i++)
      {
         verArray = $imputsGenerados[i];
         arrayGenerado.push(verArray.value);
     }
     console.log(arrayGenerado);
-    return arrayGenerado;
-}
+    CalcularMayor();
 
+    
+    
+}
+function CalcularMayor(){
+    let numeroMayor=Number(arrayGenerado[0]);
+
+    for (let i=0;i<arrayGenerado.length;i++)
+    {
+
+        if (Number(arrayGenerado[i]) > numeroMayor ) {
+            numeroMayor = arrayGenerado[i];
+
+        }
+    }
+    console.log(numeroMayor);
+
+}
 
 
 function ocultarInicio() { // Funcion para ocultar el imput y el button del principio
