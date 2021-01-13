@@ -1,6 +1,7 @@
 let $buttonNext = document.getElementById("buttonNext");
 let $placeImputs=document.getElementById("secondPart");
-let $buttonNext2=document.getElementById("click-button-next");
+// let $buttonNext2=document.getElementById("click-button-next");
+let $buttonMore;
 
 $buttonNext.addEventListener("click",ocultarInicio);
 $buttonNext.addEventListener("click",ShowsInputsCreated);
@@ -8,7 +9,7 @@ $buttonNext.addEventListener("click",ShowsInputsCreated);
 createButtonMore();  // Aca invoco la funcion de crear los botones
 createButtonNext2(); // llamo la funcion de crear al boton que calcula el promedio
 
-$buttonNext2.addEventListener("click",CalcularPromedio); 
+$buttonMore.addEventListener("click",CalcularPromedio); 
 
 function ShowsInputsCreated(){ //Muestra imputs de acuerdo al numero que escribio el cliente
     event.preventDefault();  //Esto lo pongo para que no pase lo que paso en clase-5
@@ -67,7 +68,7 @@ function createButtonMore(){ // Agrego un boton para sumar o restar integrantes
 function createButtonNext2(){ // Agrego un boton para calcular lo que el usuario introdujo en los imputs generados con la funcion sumarImputs()
 
     let $placeImputs1=document.getElementById("fourPart");
-    const $buttonMore = document.createElement('BUTTON');
+    $buttonMore = document.createElement('BUTTON');
     $buttonMore.id = "click-button-next";
     $buttonMore.innerHTML = "CALCULAR!"; 
     $placeImputs1.appendChild($buttonMore);
