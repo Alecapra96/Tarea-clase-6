@@ -2,7 +2,7 @@ let $buttonNext = document.getElementById("buttonNext");
 let $placeImputs=document.getElementById("secondPart");
 // let $buttonNext2=document.getElementById("click-button-next");
 let $buttonMore;
-
+let arrayGenerado = [] ;
 $buttonNext.addEventListener("click",ocultarInicio);
 $buttonNext.addEventListener("click",ShowsInputsCreated);
 
@@ -28,16 +28,14 @@ function ShowsInputsCreated(){ //Muestra imputs de acuerdo al numero que escribi
 function CalcularPromedio(){
     let verArray= [] ;
     let $imputsGenerados = Array.from(document.getElementsByClassName("inputsGenerados"));
-    console.log($imputsGenerados);
-    console.log(verArray);
-
+    
      for (i=0;i<$imputsGenerados.length;i++)
      {
-        let verArray = $imputsGenerados[i];
-        $imputsGenerados.push(verArray);
+        verArray = $imputsGenerados[i];
+        arrayGenerado.push(verArray.value);
     }
-    console.log($imputsGenerados);
-
+    console.log(arrayGenerado);
+    return arrayGenerado;
 }
 
 
