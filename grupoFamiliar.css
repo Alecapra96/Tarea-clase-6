@@ -1,0 +1,59 @@
+html{
+    background: #EFEFEF;  
+}
+#titulo{
+}
+
+footer{   
+    text-align: center;
+    font-family: Avenir, 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+.contenedor {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Avenir, 'Source Sans Pro', sans-serif;
+    justify-content: center
+}
+#firstPart{
+    padding: 20px 8px;
+}
+#numberFamily{
+    box-sizing: border-box;
+    padding: 7px 0px;   
+}
+#numberFamily:hover{
+    border: 2px solid  #004e9c;
+    border-radius: 4px
+}
+#buttonNext{
+    background-color: #343A40;
+    border-radius: 4px;  
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;    
+}
+#buttonNext:hover{
+    background-color: #004e9c;
+}
+.firstAndSecondPart{
+    align-items: center;
+    display: flex;
+    flex-direction: row;    
+}
+#secondPart{
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+}
+#thirdPart{
+    padding: 8px 16px;
+}
+.inputsGenerados{
+    margin: 3px;
+    padding: 8px 16px;
+}
+#click-button-more{
+    padding: 8px 16px;
+}
