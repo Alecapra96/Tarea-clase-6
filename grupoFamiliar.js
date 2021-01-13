@@ -26,7 +26,7 @@ function ShowsInputsCreated(){ //Muestra imputs de acuerdo al numero que escribi
 
 function CalcularPromedio(){
     let verArray= [] ;
-    let $imputsGenerados = document.getElementsByClassName("inputsGenerados"); 
+    let $imputsGenerados = Array.from(document.getElementByClassName("inputsGenerados"));
     console.log($imputsGenerados.length);
      for (i=0;i<$imputsGenerados.length;i++)
      {
