@@ -1,59 +1,146 @@
-html{
-    background: #EFEFEF;  
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+
+}
+body{ 
+   background: cornsilk;
+}
+footer{ 
+    align-self: flex-end;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+    background-color: chocolate;
 }
 #titulo{
-}
-
-footer{   
     text-align: center;
-    font-family: Avenir, 'Source Sans Pro', sans-serif;
-    font-weight: 900;
 }
-.contenedor {
-    align-items: center;
+.contenedor{ 
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#first-part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+#sec-and-third{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+}
+#second-part{
     display: flex;
     flex-direction: column;
-    font-family: Avenir, 'Source Sans Pro', sans-serif;
-    justify-content: center
+    margin: 8px;
 }
-#firstPart{
-    padding: 20px 8px;
+#third-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#numberFamily{
-    box-sizing: border-box;
-    padding: 7px 0px;   
+#four-part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
-#numberFamily:hover{
-    border: 2px solid  #004e9c;
-    border-radius: 4px
+#five-part{
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    width: 100%;
+    justify-content: center;
 }
-#buttonNext{
-    background-color: #343A40;
-    border-radius: 4px;  
-    color: #fff;
+#click-button-next{
+    display: none;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#click-button-next span{
     cursor: pointer;
-    padding: 8px 16px;    
-}
-#buttonNext:hover{
-    background-color: #004e9c;
-}
-.firstAndSecondPart{
-    align-items: center;
-    display: flex;
-    flex-direction: row;    
-}
-#secondPart{
-    align-items: center;
-    display: flex;
-    flex-direction: column;  
-}
-#thirdPart{
-    padding: 8px 16px;
-}
-.inputsGenerados{
-    margin: 3px;
-    padding: 8px 16px;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 #click-button-more{
-    padding: 8px 16px;
+    display: none;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 4px;
+  width: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#click-button-more span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#buttonNext{
+    
+    border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  width: 104px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#buttonNext span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.inputsGenerados{
+    padding: 0;
+    height: 30px;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 15px;
+    margin: 1.7px;
+}
+#numberFamily{
+    padding: 0;
+    height: 30px;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 14px;
+}
+#labelResults{
+    font-size: 25px;
+}
+#titulo{
+    font-size: 49px;
 }
