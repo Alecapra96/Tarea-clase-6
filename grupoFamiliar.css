@@ -114,6 +114,7 @@ footer {
   transition: all 0.5s;
   cursor: pointer;
   margin: 14px;
+  justify-content: center;
 }
 #click-button-more span{
     cursor: pointer;
