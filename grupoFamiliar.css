@@ -1,68 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* COLORS and FONTS */
+body {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 3;
+    background: darkslateblue;
 
 }
-body{ 
-   background: cornsilk;
+header {
+    background: darkslateblue;
 }
-footer{ 
-    align-self: flex-end;
-    line-height: 3;
-    text-align: center;
-    width: 100%;
-    background-color: chocolate;
+
+footer {
+    background: rgb(73, 6, 136);
 }
-#titulo{
-    text-align: center;
-}
-.contenedor{ 
-    align-content: center;
-    display: flex;
+
+.content {
+    flex-direction: row;
     flex-wrap: wrap;
+    background:  darkslateblue;
+}
+.container{
+    display: flex;
     flex-direction: column;
+}
+@media all and (min-width: 768px) {
+    
+    main {
+        flex: 2;
+        order: 2;
+        min-height: 67.1vh;
+    }
+    .left-sidebar {
+        order: 1;
+        flex: 1;
+    }
+    .right-sidebar {
+        flex: 1;
+        order: 3;
+    }
 }
 #first-part{
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: center;
 }
 #sec-and-third{
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: center;
-    align-content: center;
+    
 
 }
 #second-part{
     display: flex;
     flex-direction: column;
-    margin: 8px;
 }
 #third-part{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 #four-part{
+   
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 #five-part{
-    display: flex;
-    flex-direction: row;
-    background-color: crimson;
-    width: 100%;
-    justify-content: center;
+   
 }
 #click-button-next{
     display: none;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #41209b;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -71,7 +93,7 @@ footer{
   width: 130px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 20px;
 }
 #click-button-next span{
     cursor: pointer;
@@ -82,7 +104,7 @@ footer{
 #click-button-more{
     display: none;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #41209b;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -91,7 +113,7 @@ footer{
   width: 40px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 14px;
 }
 #click-button-more span{
     cursor: pointer;
@@ -102,16 +124,16 @@ footer{
 #buttonNext{
     
     border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #41209b;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding: 6px;
   width: 104px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 8px;
 }
 #buttonNext span{
     cursor: pointer;
@@ -127,7 +149,7 @@ footer{
     border-color: rgba(0, 0, 0, .15);
     background-color: white;
     font-size: 15px;
-    margin: 1.7px;
+    margin: 2px;
 }
 #numberFamily{
     padding: 0;
@@ -139,8 +161,5 @@ footer{
     font-size: 14px;
 }
 #labelResults{
-    font-size: 25px;
-}
-#titulo{
-    font-size: 49px;
+    font-size: 20px;
 }
