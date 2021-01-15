@@ -14,7 +14,7 @@ createButtonNext2(); // llamo la funcion de crear al boton que calcula el promed
 
 $buttonMore.addEventListener("click",CalculateAges); 
 
-
+//
 
 function ShowsInputsCreated(){ //Muestra imputs de acuerdo al numero que escribio el cliente
     event.preventDefault();  //Esto lo pongo para que no pase lo que paso en clase-5
