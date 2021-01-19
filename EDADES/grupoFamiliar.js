@@ -1,5 +1,6 @@
 let $buttonNext = document.getElementById("buttonNext");
 let $placeImputs=document.getElementById("second-part");
+let $buttonClean=document.getElementById("limpiar");
 let $buttonMore;
 let arrayGenerado = [] ;
 let num=0;
@@ -109,6 +110,7 @@ function ocultarInicio() { // Funcion para ocultar el imput y el button del prin
     document.getElementById("buttonNext").style.display = "none";
     document.getElementById("click-button-more").style.display = "flex";
     document.getElementById("click-button-next").style.display = "flex";
+    document.getElementById("limpiar").style.display="flex";
 }
 
 function createInput(){
