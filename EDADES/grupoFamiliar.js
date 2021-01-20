@@ -12,7 +12,7 @@ $buttonNext.addEventListener("click",ShowsInputsCreated);
 
 createButtonMore();  // Aca invoco la funcion de crear los botones
 createButtonNext2(); // llamo la funcion de crear al boton que calcula el promedio
-
+$buttonClean.addEventListener("click",clearInputs);
 $buttonMore.addEventListener("click",CalculateAges); 
 
 
@@ -148,4 +148,9 @@ function showResults(){
     
     $placeImputs1.appendChild($label);
     return $label;
+}
+function clearInputs(navbar){
+    //meter los valores de los inputs en un array 
+     for(let i=0;i<navbar.length;i++){navbar[i].value=""}
+
 }
