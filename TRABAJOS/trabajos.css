@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#titulo{
+    color: #13274F;
+}
+#limpiar{
+    position: fixed;
+    left: 0;
+    margin: 10px;
+}
+body{
+    background: #F0F8FF;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #13274F;
+    color: white;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#button-more-part{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+#button-less-part{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#input-part{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+}
+#button-calculate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.button{
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:500;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+    }
+    .button:active{
+    top:0.1em;
+    }
+    @media all and (max-width:30em){
+     .button{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+.button1{
+    display:inline-block;
+    padding:0.5em 0.9em;
+    margin:0 0.9em 0.3em 0;
+    border-radius:0.30em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:500;
+    color:#FFFFFF;
+    background-color: #13274F;
+    box-shadow:inset 0 -0.6em 0 -0.60em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+    }
+    .button:active{
+    top:0.1em;
+    }
+    @media all and (max-width:30em){
+     .button{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+.inputs{
+    padding: 0;
+    height: 30px;
+    outline: none;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 15px;
+    margin: 2px;
+}
