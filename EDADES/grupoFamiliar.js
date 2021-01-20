@@ -149,8 +149,9 @@ function showResults(){
     $placeImputs1.appendChild($label);
     return $label;
 }
-function clearInputs(navbar){
-    //meter los valores de los inputs en un array 
-     for(let i=0;i<navbar.length;i++){navbar[i].value=""}
+function clearInputs(){
+    $valoresInputs = document.getElementsByClassName("inputsGenerados");
+
+     for(let i=0;i<$valoresInputs.length;i++){$valoresInputs[i].value=""}
 
 }
